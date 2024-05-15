@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Raleway, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: large;
+            /* color: black; */
+        }
+
+        header::before {
+            background: url(https://media.istockphoto.com/id/1204580359/photo/natural-black-slate-stone-background-pattern-with-high-resolution-top-view-copy-space.webp?b=1&s=170667a&w=0&k=20&c=smMfPY8r1Q440SQXF-LcJEn0kT-6ioxjaKRL39dxd4I=)no-repeat center center/cover;
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 0.45;
+            background-attachment: fixed;
+        }
+
+        #header {
+            /* background-color: rgb(193, 189, 197); */
+            border-bottom: 2px solid black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /* z-index: 1000; */
+            background-color: aliceblue;
+        }
+
+        #header img {
+            /* border: 4px solid red; */
+
+        }
+
+        #nav-bar {
+            /* display: inline; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .name {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: xx-large;
+            /* border: 4px solid red; */
+            height: 100px;
+            width: 190px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nav-ul {
+            border-left: 5px solid white;
+        }
+
+        .nav-li {
+            display: inline;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 5px;
+            margin: 8px 8px;
+        }
+
+        main {
+            /* border: 4px solid cyan; */
+            margin: 125px auto 5px;
+            /* width: 1000px; */
+            padding: 10px 10px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .first-section {
+            /* border: 3px solid green; */
+
+        }
+
+        .image-home {
+            width: 55px;
+            /* border: 3px solid green; */
+
+        }
+
+        .home-features {
+            /* border: 3px solid green; */
+        }
+
+        .home-features li {
+            /* display: inline; */
+            list-style: none;
+            /* border: 3px solid rgb(0, 23, 128); */
+        }
+
+        h4 {
+            display: inline;
+            align-items: center;
+            /* border: 3px solid rgb(0, 23, 128); */
+
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+            /* border: 3px solid rgb(100, 23, 128); */
+
+        }
+
+        .heading img {
+            margin-right: 10px;
+        }
+
+        #label-1 {
+            font-weight: 650;
+        }
+
+        #email {
+            width: 200px;
+            height: 25px;
+            font-family: Raleway;
+            background-color: rgb(224, 224, 224);
+        }
+
+        #submit {
+            background-color: rgb(196, 170, 23);
+            margin: 10px;
+            height: 25px;
+            font-weight: bold;
+            border-color: rgb(133, 133, 16);
+            border-radius: px;
+        }
+
+        .container {
+            /* border: 3px solid rgb(226, 31, 31); */
+            /* height: ; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item {
+            width: 200px;
+            height: max-content;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            font-size: medium;
+        }
+
+        footer {
+            background-color: gainsboro;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .nav-link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        #submit:active {
+            background-color: rgb(78, 75, 22);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .item {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
+
+        /* .content-home:target,
+        .content-membership:target,
+        .content-about_us:target {
+            padding-top: 150px;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img src="https://cdn-icons-png.flaticon.com/128/2769/2769339.png" alt="logo" id="header-img">
+            <div class="name">SwiftShip</div>
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-li"><a href="#membership" class="nav-link">Membership</a></li>
+                <li class="nav-li"><a href="#about" class="nav-link">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="first-section">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <label for="email" id="label-1">Track your order:</label>
+                <input type="email" name="email" id="email" placeholder="Enter you email address" required>
+                <input type="submit" id="submit" value="Check Now">
+            </form>
+        </div>
+
+        <div class="content-home" id="home">
+            <h1 class="home">HOME</h1>
+            <h3>Our features:</h3>
+            <ul class="home-features">
+                <div class="heading">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2664/2664673.png" alt="track" class="image-home">
+                    <h4>Real-Time Tracking</h4>
+                </div>
+                <li>We offer real-time shipment tracking for customers to stay updated on their package status,
+                    enhancing trust in our services.</li>
+
+                <div class="heading">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1585/1585176.png" alt="delivered"
+                        class="image-home">
+                    <h4>Express Delivery Options</h4>
+                </div>
+                <li>We provide same-day or next-day delivery choices for urgent shipments, giving customers flexibility.
+                </li>
+
+                <div class="heading">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1067/1067566.png" alt="support" class="image-home">
+                    <h4>Priority Customer Support</h4>
+                </div>
+                <li>We offer dedicated support for fast shipping orders, ensuring prompt assistance and resolution for
+                    urgent inquiries.</li>
+            </ul>
+        </div>
+        <div class="content-membership" id="membership">
+            <h1 class="home">MEMEBERSHIP</h1>
+
+            <div class="container">
+                <div class="item" id="item1">
+                    <h3>Free</h3>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam recusandae velit quis cumque,
+                    beatae nostrum nihil impedit officia possimus molestiae pariatur temporibus iusto incidunt.
+                    Excepturi non est odit! In, omnis!
+                </div>
+                <div class="item" id="item2">
+                    <h3>Gold</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, hic doloremque mollitia
+                    asperiores unde velit! Magnam corrupti quis odit nihil, commodi, enim, unde doloribus eligendi hic
+                    provident adipisci laboriosam?
+                </div>
+                <div class="item" id="item3">
+                    <h3>Diamond</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore, hic inventore, perspiciatis
+                    officiis ex soluta velit tenetur veniam aut saepe rerum delectus qui fugit est, distinctio sunt
+                    commodi fhtemp no provident.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-about_us" id="about">
+            <h1>ABOUT US</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YfDFKgGNP6s?si=qKV1uzBYpiW_tvuS"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
